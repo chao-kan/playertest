@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="音乐播放"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+     <Button
+        android:id="@+id/mucis_play"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00CC00"
+        android:text="播放" />
+    
+    <Button
+        android:id="@+id/music_pause"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFF00"
+        android:text="暂停"/>
+    
+     <Button
+        android:id="@+id/music_stop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FF0033"
+        android:text="停止"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="视频播放"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+     <Button
+        android:id="@+id/video_play"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00CC00"
+        android:text="播放" />
+    
+    <Button
+        android:id="@+id/video_pause"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFF00"
+        android:text="暂停"/>
+    
+     <Button
+        android:id="@+id/video_replay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FF0033"
+        android:text="重播"/>
+    </LinearLayout>
+    
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
